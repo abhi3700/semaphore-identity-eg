@@ -11,14 +11,22 @@ $ yarn add typescript @types/node --dev
 $ npx tsc --init
 ```
 
-Write code in [`index.ts`](./index.ts).
+Write code in a file and run with `yarn`.
+
+> To run a `.ts` file, use `$ npx tsc && node <path/to/file.ts>` as script in `package.json`.
 
 ```sh
-$ yarn start
+$ yarn <script-command>
 ```
 
-where `start` is defined in [`package.json`](./package.json).
+## Usage
 
-```json
-"@semaphore-protocol/identity": "^3.15.0"
+```sh
+# Generate a random identity
+$ yarn idn
+```
+
+```sh
+# Generate an identity from a secret message
+$ yarn idd
 ```
