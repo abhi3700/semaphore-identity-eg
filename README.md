@@ -1,4 +1,6 @@
-# Semaphore Identity Example
+# Semaphore Playground
+
+Play with Semaphore Protocol.
 
 ## Project setup
 
