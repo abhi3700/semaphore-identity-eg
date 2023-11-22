@@ -56,9 +56,9 @@
     "@ethersproject/logger" "^5.7.0"
 
 "@semaphore-protocol/group@^3.15.0":
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/@semaphore-protocol/group/-/group-3.15.0.tgz#82da17b1ad2870574633bb330cb9e212053dd9fb"
-  integrity sha512-yAPvwvx/xQOZ5Ps5MNzVnhmiizxCUTQwp21nvTQTM22JMGycIFln2naRkjvvgxePXIJ5j8CmjMmTmY2k+3wpcg==
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/@semaphore-protocol/group/-/group-3.15.1.tgz#73994bcfb5bff38eb903fc44c8d001fa5d5af02a"
+  integrity sha512-PS0tfyVquKruIMwRhEFg9qNmcbtlkFZba45JMTKqQkrOojWUJX5JnumkCIF69/BGZ8Jz4rNkgrJXbPveu/I4Wg==
   dependencies:
     "@ethersproject/bignumber" "^5.7.0"
     "@ethersproject/bytes" "^5.7.0"
@@ -66,9 +66,9 @@
     "@zk-kit/incremental-merkle-tree" "1.1.0"
 
 "@semaphore-protocol/identity@^3.15.0":
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/@semaphore-protocol/identity/-/identity-3.15.0.tgz#cd930e71e3782d7f70c7e48b805eb0bc8171107c"
-  integrity sha512-X3EdkMZ/riGKAuapQaUvLeWKk5CYbvipriBXYOpnVcT6XbWMKMBPdFB5cRvW9cNyORl5nEQ6+43ejWYZYSZkYQ==
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/@semaphore-protocol/identity/-/identity-3.15.1.tgz#4b3b429b6352494bec962c910e622e7e00d8006f"
+  integrity sha512-CZ8RvuweUp8Y2ldLStUcZOWk5WRZzno+1RcTXODRoCa9LTdbh5os7toT/iUFJBRZqqa1Y/rAfQya/hN1fHO5yA==
   dependencies:
     "@ethersproject/bignumber" "^5.5.0"
     "@ethersproject/keccak256" "^5.7.0"

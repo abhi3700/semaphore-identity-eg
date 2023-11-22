@@ -8,7 +8,7 @@ export function getCommitmentFromSecretMessage(secretMessage: string): string {
   return commitment.toString();
 }
 
-// run this script only if this file is called directly from command line.
+// run this, if this file is called directly from command line.
 if (require.main === module) {
   // Represents an identity object with a secret message like seed phrase.
   // the secret message could be some message to be signed or a seed phrase.
@@ -28,5 +28,8 @@ if (require.main === module) {
 
   // recover the identity
   const recoveredIdentity = new Identity(identity.toString());
-  console.log("Recovered identity from string: ", recoveredIdentity.toString());
+  console.log(
+    "Recovered identity from identity array: ",
+    recoveredIdentity.toString()
+  );
 }
