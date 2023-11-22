@@ -10,6 +10,7 @@
     "group:offchain-members": "npx tsc && node src/group_offchain_members.js"
   },
   "dependencies": {
+    "@semaphore-protocol/contracts": "^3.15.1",
     "@semaphore-protocol/group": "^3.15.0",
     "@semaphore-protocol/identity": "^3.15.0"
   },

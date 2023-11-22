@@ -56,3 +56,26 @@ Create a group with id, depth and members (add, remove, update):
 ```sh
 $ yarn group:offchain-members
 ```
+
+### Contracts
+
+This is for onchain activities.
+
+**Setup**:
+
+```sh
+# download the contract package into the root of repo.
+$ npm pack @semaphore-protocol/contracts
+
+# unpack the tarball here
+$ tar -xzf semaphore-protocol-contracts-3.15.1.tgz
+
+# rename the "package" to "contracts"
+$ mv package contracts
+
+# remove the tarball
+$ rm semaphore-protocol-contracts-3.15.1.tgz
+
+# move everything in contracts to src folder
+$ mkdir -p src && find . -maxdepth 1 ! -name 'src' -exec mv {} src \;
+```
