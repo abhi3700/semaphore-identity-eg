@@ -78,4 +78,10 @@ $ rm semaphore-protocol-contracts-3.15.1.tgz
 
 # move everything in contracts to src folder
 $ mkdir -p src && find . -maxdepth 1 ! -name 'src' -exec mv {} src \;
+
+# cd into contracts/ folder
+$ cd contracts
+
+# init with foundry for generating more rust like examples
+$ forge init
 ```
