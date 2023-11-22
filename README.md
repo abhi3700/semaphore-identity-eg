@@ -2,7 +2,7 @@
 
 ## Project setup
 
-Steps:
+Steps (one-time):
 
 ```sh
 $ yarn init -y

@@ -8,6 +8,9 @@ const identity = new Identity(
   "lock frost nation imitate party medal knee cigar rough wine document immense"
 );
 console.log(`Identity: `, identity);
+
+// Print the trapdoor and nullifier of the identity as
+// poseidon2 hashes of the respective integers.
 console.log(`Identity with trapdoor & nullfier: `, identity.toString());
 
 // print all these values.
