@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "idd": "npx tsc && node src/id_deterministic.js",
-    "idr": "npx tsc && node src/id_random.js",
-    "group:offchain": "npx tsc && node src/group_offchain.js"
+    "id:random": "npx tsc && node src/id_random.js",
+    "id:deterministic": "npx tsc && node src/id_deterministic.js",
+    "group:offchain": "npx tsc && node src/group_offchain.js",
+    "group:offchain-depth": "npx tsc && node src/group_offchain_depth.js",
+    "group:offchain-members": "npx tsc && node src/group_offchain_members.js"
   },
   "dependencies": {
     "@semaphore-protocol/group": "^3.15.0",

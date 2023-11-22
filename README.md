@@ -21,12 +21,36 @@ $ yarn <script-command>
 
 ## Usage
 
-```sh
-# Generate a random identity
-$ yarn idn
-```
+### Identities
+
+Generate a random identity:
 
 ```sh
-# Generate an identity from a secret message
-$ yarn idd
+$ yarn id:random
+```
+
+Generate a deterministic identity from a secret message:
+
+```sh
+$ yarn id:deterministic
+```
+
+### Groups
+
+Create a group with id:
+
+```sh
+$ yarn group:offchain
+```
+
+Create a group with id and depth:
+
+```sh
+$ yarn group:offchain-depth
+```
+
+Create a group with id, depth and members (add, remove, update):
+
+```sh
+$ yarn group:offchain-members
 ```
