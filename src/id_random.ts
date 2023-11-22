@@ -12,7 +12,7 @@ export function getCommitmentBigint(): bigint {
   return commitment;
 }
 
-// run this, if this file is called directly from command line.
+// main function
 if (require.main === module) {
   // Represents an identity object.
   const { trapdoor, nullifier, commitment } = new Identity();
