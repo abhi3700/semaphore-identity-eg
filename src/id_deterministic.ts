@@ -8,7 +8,7 @@ export function getCommitmentFromSecretMessage(secretMessage: string): string {
   return commitment.toString();
 }
 
-// run this, if this file is called directly from command line.
+// main function
 if (require.main === module) {
   // Represents an identity object with a secret message like seed phrase.
   // the secret message could be some message to be signed or a seed phrase.

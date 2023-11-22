@@ -3,7 +3,7 @@
 
 import { Group } from "@semaphore-protocol/group";
 
-// run this, if this file is called directly from command line.
+// main function
 if (require.main === module) {
   // create a group with id 324 and depth 30.
   const group = new Group(324, 30);

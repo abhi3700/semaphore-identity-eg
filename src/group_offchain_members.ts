@@ -5,7 +5,7 @@
 import { Group } from "@semaphore-protocol/group";
 import { getCommitment, getCommitmentBigint } from "./id_random";
 
-// run this, if this file is called directly from command line.
+// main function
 if (require.main === module) {
   // add members to an array
   // populate an empty array with given length & elements with same function call called 10 times.
