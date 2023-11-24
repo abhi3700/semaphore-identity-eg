@@ -44,11 +44,27 @@ contract: 0x6F53B339987f2B7347B889a3FEFc9d6793ACCcdA
 ```
 
 ```sh
-$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address)" 3154 30 $DEPLOYER_PUBLIC_KEY --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address)" 3155 30 $DEPLOYER_PUBLIC_KEY --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
 
 ```
-tx url: https://sepolia.etherscan.io/tx/0x49f850843be2dc813322a1938142cdc2d6e58dbe00e41b854b32e4ebe2e325f5
+tx url: https://sepolia.etherscan.io/tx/0x69f41c3144450dc5ea343e832954abbe95a379c9e5ddfa6b0169406e1069c604
+```
+
+### createGroup (with duration to verify proof)
+
+```
+Sighash: 65e54f83
+Function Signature: createGroup(uint256,uint256,address,uint256)
+contract: 0x6F53B339987f2B7347B889a3FEFc9d6793ACCcdA
+```
+
+```sh
+$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address,uint256)" 3156 30 $DEPLOYER_PUBLIC_KEY 86400 --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```
+
+```
+tx url: https://sepolia.etherscan.io/tx/0x64d35bc3ad3076fefbdc98dc9859134e3fac617f555f79f4e7bd08f98ff7a87b
 ```
 
 <!-- TODO: Add more results -->
