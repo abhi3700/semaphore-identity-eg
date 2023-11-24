@@ -35,36 +35,46 @@ $ cast --to-dec 38EB -i 16
 
 Contract: Semaphore
 
+Addresses (on networks): [deployments](../deployments.json)
+
 ### createGroup
 
-```
-Sighash: 9c112141
-Function Signature: createGroup(uint256,uint256,address)
-contract: 0x6F53B339987f2B7347B889a3FEFc9d6793ACCcdA
-```
-
 ```sh
-$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address)" 3155 30 $DEPLOYER_PUBLIC_KEY --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address)" 3111 20 $DEPLOYER_PUBLIC_KEY --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
 
 ```
-tx url: https://sepolia.etherscan.io/tx/0x69f41c3144450dc5ea343e832954abbe95a379c9e5ddfa6b0169406e1069c604
+tx url: https://sepolia.etherscan.io/tx/0x5b011c511d6d3ae6a533eba97515cfdd0d22a71538da65592adde2051fa7bae6
 ```
 
 ### createGroup (with duration to verify proof)
 
+```sh
+$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address,uint256)" 3112 20 $DEPLOYER_PUBLIC_KEY 86400 --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
-Sighash: 65e54f83
-Function Signature: createGroup(uint256,uint256,address,uint256)
-contract: 0x6F53B339987f2B7347B889a3FEFc9d6793ACCcdA
+
 ```
+tx url: https://sepolia.etherscan.io/tx/0x9fa8fbc8ebbdd35685a51cee88524e774d00cf202f900b6cbb40a8630deea1c2
+```
+
+### addMember
 
 ```sh
-$ cast send $SEMAPHORE_CONTRACT_ADDRESS "createGroup(uint256,uint256,address,uint256)" 3156 30 $DEPLOYER_PUBLIC_KEY 86400 --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+$ cast send $SEMAPHORE_CONTRACT_ADDRESS "addMember(uint256,uint256)" 3111 11216909772611159987761092911642618205426065353080584263434245612434546457738 $DEPLOYER_PUBLIC_KEY --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
 ```
 
 ```
-tx url: https://sepolia.etherscan.io/tx/0x64d35bc3ad3076fefbdc98dc9859134e3fac617f555f79f4e7bd08f98ff7a87b
+tx url: https://sepolia.etherscan.io/tx/0xb7b86317e35f90eb04476df9df7748caf08b6009dc1e84ba120484abafe95103
+```
+
+### addMembers
+
+```sh
+$ cast send $SEMAPHORE_CONTRACT_ADDRESS "addMembers(uint256,uint256[])" 3111 [14873715770595485563260312142424404454075221624479988126831304707589940083175,18269309615270290411027305068632481324321098674725859679913224414606738740685]  $DEPLOYER_PUBLIC_KEY --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```
+
+```
+tx url: https://sepolia.etherscan.io/tx/0xaaeb36e26e6e1934a56237f0caa4e4cd02e864c27e3951d2596c010a16ee756a
 ```
 
 <!-- TODO: Add more results -->
