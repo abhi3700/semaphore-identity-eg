@@ -1,5 +1,6 @@
 [workspace]
 members = [
     "scripts",
+    "sdk-rs",
 ]
 resolver = "2"
