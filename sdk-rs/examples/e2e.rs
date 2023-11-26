@@ -1,4 +1,10 @@
-//! E2E testing for [`Semaphore`] Identity
+//! E2E testing for [`Semaphore`] Identity done off-chain
+//!
+//! Following steps are followed:
+//! 1. Create MT with depth = 30, all leaves as zero Field (over BN254)
+//! 2. Add leaf/member at an index in the tree leaves
+//! 3. Generate SNARK proof from [merkle_proof, nullifier_hash,....]
+//! 4. Verify SNARK proof
 
 use semaphore::{
     get_supported_depths, hash_to_field, identity::Identity, poseidon_tree::LazyPoseidonTree,
