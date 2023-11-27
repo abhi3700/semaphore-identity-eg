@@ -6,6 +6,8 @@
 //! 3. Generate SNARK proof from [merkle_proof, nullifier_hash,....]
 //! 4. Verify SNARK proof
 
+use std::time;
+
 use semaphore::{
     get_supported_depths, hash_to_field, identity::Identity, poseidon_tree::LazyPoseidonTree,
     protocol::*, Field,
@@ -43,7 +45,11 @@ fn main() {
 
     let nullifier_hash = generate_nullifier_hash(&id, external_nullifier_hash);
 
+    let start = time::Instant::now();
     let proof = generate_proof(&id, &merkle_proof, external_nullifier_hash, signal_hash).unwrap();
+    let elapsed = start.elapsed().as_secs();
+    println!("Proof generation took {} secs", elapsed);
+    println!("Proof size : {} bytes", std::mem::size_of_val(&proof));
     dbg!(proof);
     let success = verify_proof(
         root,
