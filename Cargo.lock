@@ -2646,6 +2646,7 @@ version = "0.1.0"
 name = "sdk-rs"
 version = "0.1.0"
 dependencies = [
+ "rand",
  "semaphore",
 ]
 
