@@ -4,14 +4,13 @@
 //! 1. Create MT with depth = 30, all leaves as zero Field (over BN254)
 //! 2. Add leaf/member at an index in the tree leaves
 //! 3. Generate SNARK proof from [merkle_proof, nullifier_hash,....]
-//! 4. Verify SNARK proof
-
-use std::time;
+//! 4. Verify SNARK proof (Groth16 based)
 
 use semaphore::{
     get_supported_depths, hash_to_field, identity::Identity, poseidon_tree::LazyPoseidonTree,
     protocol::*, Field,
 };
+use std::time;
 
 fn main() {
     // generate identity
