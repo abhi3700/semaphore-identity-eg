@@ -9,8 +9,13 @@
 use semaphore::identity::Identity;
 
 fn main() {
-    let mut secret =
-        *b"lock frost nation imitate party medal knee cigar rough wine document immense";
+    let seed_phrase =
+        "lock frost nation imitate party medal knee cigar rough wine document immense";
+    println!("Seed phrase: {}", seed_phrase);
+    let binding = seed_phrase.to_string();
+    let secret_bytes = binding.as_bytes();
+
+    let mut secret = Vec::from(secret_bytes);
     let id = Identity::from_secret(&mut secret, None);
     println!("Id secret: {}", id.secret_hash());
     println!("Trapdoor (secret): {}", id.trapdoor);
